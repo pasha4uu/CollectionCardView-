@@ -17,7 +17,7 @@ class MyViewController: UIViewController,UICollectionViewDelegate,UICollectionVi
         super.viewDidLoad()
       myCV.delegate = self
       myCV.dataSource = self
-      print("ok ......")
+      print("ok ......ppppp")
         // Do any additional setup after loading the view.
     }
     
