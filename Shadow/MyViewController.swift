@@ -11,6 +11,8 @@ import UIKit
 class MyViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
   @IBOutlet weak var myCV: UICollectionView!
   
+  let dataArr:[String] = ["B C Home","Hom grC","H FrtBC","me HYTABC","F HomeBC","JHY HoBC","Home BPLC","Home ABLOIC","Homokije ABC","Hooikume ABc"]
+  let ImageArr = [ UIImage(named: "download.jpeg"),UIImage(named: "download1.jpeg"),UIImage(named: "download2.jpeg"),UIImage(named: "download.jpeg"),UIImage(named: "download1.jpeg"),UIImage(named: "download2.jpeg"),UIImage(named: "download1.jpeg"),UIImage(named: "download.jpeg"),UIImage(named: "download2.jpeg"),UIImage(named: "download1.jpeg")]
     override func viewDidLoad() {
         super.viewDidLoad()
       myCV.delegate = self
@@ -33,7 +35,7 @@ class MyViewController: UIViewController,UICollectionViewDelegate,UICollectionVi
     return 1
   }
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 10
+    return dataArr.count
   }
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MYCollectionViewCell
@@ -44,12 +46,12 @@ class MyViewController: UIViewController,UICollectionViewDelegate,UICollectionVi
     cell?.layer.shadowOffset = CGSize(width: 0, height: 1.0)
     cell?.layer.shadowRadius = 4.0
     cell?.layer.shadowOpacity = 1.0
-    cell?.layer.shadowColor = UIColor.darkGray.cgColor
+    cell?.layer.shadowColor = UIColor.darkText.cgColor
     cell?.layer.shadowPath = UIBezierPath(roundedRect: (cell?.bounds)!, cornerRadius: (cell?.contentView.layer.cornerRadius)!).cgPath
     cell?.layer.masksToBounds = false
-    cell?.imageLbl.image = UIImage(named: "download.jpeg")
-    cell?.titleLbl.text = " my details \(indexPath.row)"
-    cell?.descriptionLbl.text = "my details my details my details my details"
+    cell?.imageLbl.image = ImageArr[indexPath.row]
+    cell?.titleLbl.text = dataArr[indexPath.row]
+    cell?.descriptionLbl.text = "I was just wondering when you programmatically  set up you view are the constraints automatically assigned for that device and others that it would run on? or just for that device. Since there is no storyboard what would be the default device"
     return cell!
   }
   
