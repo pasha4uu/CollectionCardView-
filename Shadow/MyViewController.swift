@@ -17,7 +17,7 @@ class MyViewController: UIViewController,UICollectionViewDelegate,UICollectionVi
         super.viewDidLoad()
       myCV.delegate = self
       myCV.dataSource = self
-      print("ok ......ppppp")
+      print("ok ......pppsdcksdc sdlklsdk sdlklksdf wekoiwri roitoritioritoirotipp")
         // Do any additional setup after loading the view.
     }
     
@@ -49,10 +49,10 @@ class MyViewController: UIViewController,UICollectionViewDelegate,UICollectionVi
     cell?.layer.shadowOpacity = 1.0
     cell?.layer.shadowColor = UIColor.darkText.cgColor
     cell?.layer.shadowPath = UIBezierPath(roundedRect: (cell?.bounds)!, cornerRadius: (cell?.contentView.layer.cornerRadius)!).cgPath
-    cell?.layer.masksToBounds = false
+    cell?.layer.masksToBounds = true
     cell?.imageLbl.image = ImageArr[indexPath.row]
     cell?.titleLbl.text = dataArr[indexPath.row]
-    cell?.descriptionLbl.text = "I was just wondering when you programmatically  set up you view are the constraints automatically assigned for that device and others that it would run on? or just for that device. Since there is no storyboard what would be the default device"
+    cell?.descriptionLbl.text = "I was just wondering when you programmatically  set up you view are the constraints automatically asskfkgjgj erkjjtkjkrt lektkektktigned for that device and others that it would run on? or just for that device. Since there is no storyboard what would be the default device"
     return cell!
   }
   
