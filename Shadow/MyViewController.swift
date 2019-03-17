@@ -11,7 +11,7 @@ import UIKit
 class MyViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
   @IBOutlet weak var myCV: UICollectionView!
   
-  let dataArr:[String] = ["B C Home","Hom grC","H FrtBC","me HYTABC","F HomeBC","JHY HoBC","Home BPLC","Home ABLOIC","Homokije ABC","Hooikume ABcP"]
+  let dataArr:[String] = ["B C Home","HoUYm grC","HUIO FrtBC","me HYTABC","F HomOIeBC","JHY HoIukaaBC","Home BPLC","Home ABLOIC","Homokije ABC","HJHUikume ABcP"]
   let ImageArr = [ UIImage(named: "download.jpeg"),UIImage(named: "download1.jpeg"),UIImage(named: "download2.jpeg"),UIImage(named: "download.jpeg"),UIImage(named: "download1.jpeg"),UIImage(named: "download2.jpeg"),UIImage(named: "download1.jpeg"),UIImage(named: "download.jpeg"),UIImage(named: "download2.jpeg"),UIImage(named: "download1.jpeg")]
     override func viewDidLoad() {
         super.viewDidLoad()
